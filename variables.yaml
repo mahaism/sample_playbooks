@@ -1,0 +1,10 @@
+---
+# writing playbook with variables
+#creating a file in remote location with some content
+- hosts: all
+  vars:
+    my_content: "This file created using variables concept..!"
+  tasks:
+  - copy:
+      dest: /home/ansible/var_file.txt
+      content: "{{ my_content }}"   
