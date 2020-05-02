@@ -1,0 +1,11 @@
+---
+# Reading variable value from command line while executing the script
+- name: play1
+  hosts: all
+  vars_prompt:
+    - name: var1
+      prompt: Enter any value? 
+  tasks:
+  - name: This is used to print a variable value
+    debug: 
+      msg: "The value of your variable is: {{ var1 }}"

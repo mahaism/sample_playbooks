@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  tasks:
+  - name: This will create my_dir1
+    command: mkdir /home/ansible/my_dir1
+  - name: This will create my_dir2
+    command: mkdir /home/ansible/my_dir2
+  - name: This will create my_dir3
+    command: mkdir /home/ansible/my_dir3
