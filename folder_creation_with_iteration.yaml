@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: all
   tasks:
     - name: creating multiple directories using iteration
       command: mkdir /home/ansible/"{{ item }}"

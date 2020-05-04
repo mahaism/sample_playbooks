@@ -1,0 +1,10 @@
+---
+- hosts: all
+  tasks:
+    - name: This will create multiple users
+      commnad: useradd "{{ item }}"
+      with_items:
+      - test1
+      - test2
+      - test3
+      
